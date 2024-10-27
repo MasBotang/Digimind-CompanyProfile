@@ -1,0 +1,255 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box; 
+    font-family: 'Nunito', Courier, monospace;
+    overflow-x: hidden !important;
+}
+.container-fluid {
+    padding-right: 0;
+}
+
+/* Nav Style */
+.navbar-collapse {
+    display: flex;
+    text-align: center;
+    color: #147C8E;
+}
+.nav-link{
+    color: #147C8E;
+}
+.button-1{
+    background-color: #147C8E;
+    color: #FFF3DA;
+    border: none;
+    border-radius: 20px;
+    padding: 0.6vw 3vw ;
+    font-size: 14px;
+    font-weight: 700;
+}
+.bg-custom{
+    background-color:rgba(78, 38, 38, 0.007);
+}
+.transparent{
+    background-color: rgba(21, 68, 110, 0);
+}
+
+ /* Ukuran font default*/
+ .logo-img {
+    width: 120px;
+}
+ .responsive-font {
+    font-size: 1rem;
+}
+.icon-img {
+    width: 30px; 
+}
+
+/* Ukuran font untuk layar medium */
+@media (min-width: 768px) {
+    .logo-img {
+        width: 140px;
+    }
+    .responsive-font {
+        font-size: 1.1rem; /* setara fs-4 */
+    }
+    .icon-img {
+        width: 40px; /* Ukuran ikon besar */
+    }
+}
+/* Ukuran font untuk layar besar */
+@media (min-width: 992px) {
+    .logo-img {
+        width: 150px;
+    }
+    .responsive-font {
+        font-size: 1.2rem; /* setara fs-3 */
+    }
+    .icon-img {
+        width: 50px; /* Ukuran ikon besar */
+    }
+}
+/* Home Style */
+#home{
+    background-image: url('img/home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    width: 100vw;
+}
+.home-style{
+    background-color: #FFF3DA;
+    width: 32vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.fw-custom-1{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2vw;
+}
+.vh-custom{
+    min-height: 92vh;
+}
+
+/* About Us */
+.about-us-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-section::before,
+.about-us-section::after {
+    content: '';
+    flex: 1;
+    border-bottom: 3px solid #008080; /* Customize the line color */
+    margin: 0 10px;
+}
+
+/* About Us */
+.frame-1{
+    width: 521px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 28px;
+    font-weight: 600;
+}
+.qoute-icon{
+    font-size: 50px;
+    font-family: "Nunito";
+}
+
+/* Our Team */
+.do-dark{
+    background-color: #147C8E;
+    padding: 5px;
+    border: 5px solid #147C8E;
+    border-radius: 10px;
+}
+.do-light{
+    padding: 5px;
+    border: 5px solid #147C8E;
+    border-radius: 10px;
+}
+.do-down{
+    background-color: #147C8E;
+    padding: 5px;
+    border: 5px solid #147C8E;
+    border-radius: 10px;
+}
+
+/* contact Us */
+.custom-textarea {
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: #FFF3DA;
+    color: #147C8E;
+}
+#successMessage {
+    color: #28a745;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #28a745;
+    background-color: #d4edda;
+    border-radius: 5px;
+}
+
+#errorMessage {
+    color: #dc3545;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #dc3545;
+    background-color: #f8d7da;
+    border-radius: 5px;
+}
+
+/* Portofolio */
+.style-portofolio {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+
+.style-portofolio img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease, filter 0.3s ease;
+    filter: brightness(0.9); /* Sedikit redup untuk tampilan elegan */
+}
+
+.style-portofolio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(5, 65, 62, 0.2); 
+}
+
+.style-portofolio:hover img {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+/* CSS Hover Style for Team Member Section */
+.team-member-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-image {
+    transition: transform 0.3s ease;
+}
+
+.team-member-container:hover .team-member-image {
+    transform: scale(1.1);
+}
+
+.team-member-info {
+    transition: background-color 0.3s ease;
+}
+
+.team-member-container:hover .team-member-info {
+    background-color: #e0f7fa;
+}
+
+/* Teks overlay di atas gambar */
+.style-portofolio span {
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    background-color: rgba(21, 68, 69, 0.6);
+    color: #FFF3DA;
+    font-size: 1.2em;
+    padding: 20px 230px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    transform: translateY(10px); /* Mulai dari sedikit ke bawah */
+}
+
+.style-portofolio:hover span {
+    opacity: 1; /* Teks muncul saat hover */
+    transform: translateY(0); /* Geser ke posisi awal */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .style-portofolio {
+        width: 90%; /* Penuh di layar kecil */
+    }
+}
+
+
